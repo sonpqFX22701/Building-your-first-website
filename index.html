@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bootstrap Core CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    <!--Bootstrap iCON-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!--custom style CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>SonPQ Page</title>
+    
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">SonPQ Blog</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Life Style</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Tech</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#enroll"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#enroll">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              ></input>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <!--Carousel-->
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class = "carousel-inner">
+          <div class="carousel-item active">
+            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+            <!--Theo huong dan cua bai tao class: bg-img1 và làm background nhung khong hoat dong
+            Theo huong dan tu bootstrap carousel de tao slide co the them doi tuong img trong carousel-item truoc container-->
+            <img src="https://wallpapercave.com/wp/wp2288197.jpg" class="d-block w-100"> <!--Bo sung doan code nay-->
+            <div class="container">
+              <div class="carousel-caption text-center text-sm-start">
+                <h1>Example Headline</h1>
+                <p>Some representative place holder content for the first slide of carousel</p>
+                <p><a href="#" class="btn btn-lg btn-primary">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+            <img src="https://wallpapercave.com/w/wp2288190.jpg" class="d-block w-100"> <!--Bo sung doan code nay-->
+            <div class="container">  
+              <div class="carousel-caption text-center text-sm-start">
+                  <h1 >Another Example headline</h1>
+                  <p>Some representative place holder content for the first slide of carousel</p>
+                  <p><a href="#" class="btn btn-lg btn-primary">Learn More</a></p>
+              </div>
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->   
+            <img src="https://wallpapercave.com/wp/wp12295089.jpg" class="d-block w-100"> <!--Bo sung doan code nay-->
+            <div class="container"> 
+              <div class="carousel-caption text-center text-sm-start">
+                <h1>One more good measure</h1>
+                <p>Some representative place holder content for the first slide of carousel</p>
+                <p><a href="#" class="btn btn-lg btn-primary">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+      <!--About-->
+    <section class="p-5" id="about">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="img/Chan dung.jpg" class="rounded-circle mb-3" alt="" height="128px">
+                <h3 class="card-title mb-3"><span class="text-primary">Pham Quang Son</span></h3>
+                <p class="card-text">
+                  Là một người yêu thích công nghệ, luôn muốn tìm hiểu xu thế công nghệ để phát triển kịp với thời đại. 
+                  Đồng thời cũng là một người thích khám phá thế giới, có đam mê du lịch.
+  
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-light">
+              <h2 class="text-center mb-4">Contact Infor</h2>
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item">
+                  <span class="fw-bold">Address:</span>
+                  Nguyen Luong Bang, Danang
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Phone:</span>
+                  0968888333
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Email:</span>
+                  exmam@gmail.com
+                </li>
+                <li class="list-group-item">
+                  <span class="fw-bold">Website:</span>
+                  https://abc.xyx
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            
+            <!-- <div id="map"></div> -->
+              <iframe id="map2" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2853.608636511145!2d108.25157068351876!3d15.995406401268943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2smz!4v1684617828845!5m2!1svi!2smz" width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+    <!-- FOOTER -->
+    <footer class="p-5 bg-dark text-white text-center 
+      position-relative">
+      <div class="container">
+        <p class="lead">
+          copyright &copy; 2023 SonPQ1 
+        </p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+
+    <!--Contact-->
+    <section class="contact">
+      <div class="modal fade" id="enroll" 
+      tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="enrollLabel">Your information</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Send your question, I will contact soon!</p>
+              <form>
+                <div class="mb-3">
+                  <label for="first-name" class="col-form-lable">First name*:</label>
+                  <input type="text" class="form-control" id="first-name" placeholder="Your fist name">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="last-name" class="col-form-lable">Last name*:</label>
+                  <input type="text" class="form-control" id="last-name" placeholder="Your last name">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="email" class="col-form-lable">Email:*</label>
+                  <input type="text" class="form-control" id="email" placeholder="Your email">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="phone" class="col-form-lable">Phone:</label>
+                  <input type="text" class="form-control" id="phone" placeholder="Your phone number">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="col-form-lable">Leave us a message...</label>
+                  <textarea name="message" class="form-control" id="message"
+                    placeholder="Write your details" required></textarea>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    
+    
+    
+    
+    
+    
+
+    <!--JavaScript Bunder with Popper-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
